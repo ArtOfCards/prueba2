@@ -16,14 +16,15 @@ document.getElementById("form").addEventListener("submit",function(event){
     if(opcionMediana == true){operacionMedian(resultado());}
     if(opcionModa == true){operacionMode(resultado());}
     if(opcionDesviacion == true){operacionSTD(resultado());}
-    
+
+    tipoDato();
+
 });
 function resultado(){
     const datos = document.getElementById("ingresoDatos").value;
     console.log(datos.split(","));
     let arregloDatos=datos.split(',');
     let arregloDatosConvertida=arregloDatos.map(function(item){return parseInt(item)});
-    console.log(arregloDatos.length + "numero del arreglo");
 
     return arregloDatosConvertida;
 }
@@ -46,6 +47,22 @@ function operacionMode(array){
 function operacionMean(array){
     let mean = ss.mean(array);
     document.getElementById("respuesta").innerHTML= (  "la media es: "+ mean.toFixed(2));
+}
+
+function tipoDato(){
+    const datos = document.getElementById("ingresoDatos").value;
+    console.log(datos.split(","));
+    let arregloDatos = datos.split(',');
+    
+    for (var i = 0; i < arregloDatos.length; i++) {
+        if(isNumber(arregloDatos[i])== true){
+            console.log(arregloDatos[i]);
+            console.log("es cuantitativo");
+        }else{
+            console.log(arregloDatos[i]);
+            console.log("es cualitativo");
+        }
+      }
 }
 const isNumber = n => (typeof(n) === 'number' || n instanceof Number || (typeof(n) === 'string' && !isNaN(n))) && isFinite(n);
 
