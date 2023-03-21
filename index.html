@@ -16,19 +16,32 @@
 <body>
     <div class="contenedor">
         <header class="header">
-            <h2>HEADER</h2>
+            <h2>CALCULADORA  ESTADISTICA</h2>
         </header>
         <main class="contenido">
-            <h1>CONTENIDO</h1>
-            <form>
-                <input type="text" name="formulario" id="ingresoDatos" placeholder="digite sus datos separados por 'comas'" >
+            <h4> ingrese sus datos separados por comas ( "," ) como se ve en el ejemplo, seleccione la operación estadistica que desee implementar y finalmente presione el igual ( " = " )</h4>
+            <form id="formulario" class ="formulario " >
+                <input  type="text" name="formulario" id="ingresoDatos" placeholder=" 12,13,14,15,16,17,18 ó sol,sal,liso,azul,lazo,rizo">
             </form>
         </main>
         <aside class="sidebar">
-            <h3>SIDEBAR</h3>
+            <form>
+                <input type="checkbox" name="opcion[]" id="media"> <span id="opcion">media (x̄)</span>
+            </form>
+            <form>
+                <input type="checkbox" name="opcion[]" id="mediana"> <span id="opcion">mediana (Me)</span>
+            </form>
+            <form>
+                <input type="checkbox" name="opcion[]" id="moda"> <span id="opcion">moda (Mo)</span>
+            </form>
+            <form>
+                <input type="checkbox" name="opcion[]" id="desviacion"> <span id="opcion">desviacion (S)</span>
+            </form>
+
+            
         </aside>
         <div class="widget-1">
-            <h3>WIDGET-1</h3>
+            <label id="respuesta" ></label>
         </div>
         <div class="widget-2">
             <form id="form">
