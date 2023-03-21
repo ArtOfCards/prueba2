@@ -1,0 +1,21 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "prueba tecnica 2",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "art",
+  "license": "ISC",
+  "dependencies": {
+    "@mathigon/fermat": "^1.1.6",
+    "dark-mode-toggle": "^0.14.4",
+    "simple-statistics": "^7.8.3",
+    "statistical-js": "^2.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}

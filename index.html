@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" media="(prefers-color-scheme: light)" href="css/ligth.css">
     <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="css/dark.css">
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
-
 
 </head>
 <body>
@@ -23,12 +20,9 @@
         </header>
         <main class="contenido">
             <h1>CONTENIDO</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque perferendis ratione doloribus nam! Illo minus a, maiores sint consequatur tempora cumque quod ab architecto facere. Dolores aliquam repellat quas quo dicta ratione maxime reprehenderit alias quod perferendis eligendi veritatis molestiae, aliquid repudiandae temporibus quidem optio deleniti assumenda illum voluptas?
-
-                <br><br>
-
-            </p>
+            <form>
+                <input type="text" name="formulario" id="ingresoDatos" placeholder="digite sus datos separados por 'comas'" >
+            </form>
         </main>
         <aside class="sidebar">
             <h3>SIDEBAR</h3>
@@ -37,7 +31,9 @@
             <h3>WIDGET-1</h3>
         </div>
         <div class="widget-2">
-            <h3>WIDGET-2</h3>
+            <form id="form">
+                <button  class ="btn" type="submit" value="submit"> <img src="img/iconoIgual.png"> </button>
+            </form>
             <dark-mode-toggle id="dark-mode-toggle-1" appearance="toggle" permanent="true"></dark-mode-toggle>
             
         </div>
@@ -45,5 +41,8 @@
             <h3>FOOTER</h3>
         </footer>
     </div>
+
+    <script src="script.js" type="module"></script>
+
 </body>
 </html>

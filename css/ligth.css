@@ -1,5 +1,14 @@
 :root{
-    --fondo-widget-1: blue;
+    --fondo-widget-1: #b6cdd4;
+    --fondo-widget-2:#b6cdd4;
+    --fondo-footer:#d7f2fa;
+    --fondo-sidebar:#8eb1c2;
+    --fondo-contenido:#cde6ed;
+    --fondo-contenedor:#d7f2fa;
+    --fondo-web:#d7f2fa;
+    --fondo-header:#d7f2fa;
 
+    --color-letra:black;
+    --color-letra-footer:black;
 }
 
